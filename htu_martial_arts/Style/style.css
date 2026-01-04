@@ -1,0 +1,1180 @@
+/* =======================
+    RESET & BODY
+======================= */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body 
+{
+    color: #111;
+    background-color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* =======================
+   HEADER & NAVBAR
+======================= */
+header 
+{
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo-img 
+{
+    width: 120px;
+    height: 80px;
+    margin: 10px 20px 0;
+}
+header nav 
+{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin-right: 8px;
+}
+nav a 
+{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 8px;
+}
+nav a:hover 
+{
+    color: #aa1313;
+}
+
+/* =======================
+   Index Page (HOME)
+======================= */
+.hero
+{
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    height: 75vh;
+}
+.hero #welcome-img 
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.hero-content 
+{
+    position: absolute;
+    top: 40%;
+    right: 70px;                 
+    color: whitesmoke;
+    font-style: italic;
+    padding: 25px;
+    max-width: 380px;
+    z-index: 2;
+}
+.hero-content p
+{
+    color: #1c1b1b;
+    font-style: normal;
+}
+.hero-content h1
+{
+    color: #990f0f;
+    line-height: 1.5;
+    font-weight: 1000;
+}
+.hero-content h2
+{
+    line-height: 0.8;
+}
+.hero-buttons a 
+{
+    display: inline-block;
+    padding: 8px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero-buttons a:hover 
+{
+    background-color: #aa1313;
+    border-color: #aa1313;
+}
+
+.why-us 
+{
+    display: flex;
+    gap: 40px;
+    padding: 30px 60px;
+    align-items: center;
+}
+.why-images 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.why-images img 
+{
+    width: 100%;
+    border-radius: 6px;
+}
+.why-text h2 
+{
+    color: #aa1313;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.why-text p 
+{
+    color: #333;
+    line-height: 1.7;
+}
+
+.programs 
+{
+    padding: 60px 80px;
+    text-align: center;
+}
+.programs h2 
+{
+    color: #aa1313;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+.program-cards 
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.program-cards .program-card 
+{
+    background-color: #f5f5f5;
+    padding: 30px;
+    width: 260px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.program-cards .program-card i 
+{
+    font-size: 36px;
+    color: #aa1313;
+    margin-bottom: 15px;
+}
+.program-cards .program-card h3
+{
+    margin-bottom: 10px;
+}
+.program-cards .program-card p 
+{
+    font-size: 14px;
+    color: #555;
+}
+.program-cards .program-card:hover 
+{
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =======================
+   ABOUT US
+======================= */
+.about-hero 
+{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.about-hero video 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.hero-text 
+{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 75px;
+    padding-left: 80px;
+    max-width: 700px;
+}
+.hero-text h1 
+{
+    color: #aa1313;
+    font-style: italic;
+    font-size: 40px;
+}
+.hero-text p 
+{
+    color: whitesmoke;
+    font-size: 18px;
+}
+.location-text 
+{
+    font-size: 16px;
+    color: #eee;
+}
+
+.about-section 
+{
+    padding: 60px 80px;
+}
+.about-content 
+{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;    
+}
+.about-text 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+.about-card 
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    border: 2px solid #aa1313;
+}
+.about-card h2 
+{
+    color: #aa1313;
+    margin-bottom: 10px;
+}
+.about-card p 
+{
+    color: #333;
+}
+
+.about-list 
+{
+    list-style: none;
+    padding: 0;
+    color: #333;
+}
+.about-list li 
+{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.about-list i 
+{
+    color: #aa1313;
+    margin-right: 8px;
+}
+.about-images 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.about-images img 
+{
+    width: 211px;
+    border-radius: 10px;
+}
+
+.mission-vision 
+{
+    background-color: #f9f9f9;
+    padding: 60px 80px;
+}
+.about-details 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.about-card2 
+{
+    background-color: #ffffff;
+    padding: 30px;
+    width: 650px;
+    border-radius: 10px;
+    border: 2px solid #aa1313;
+    text-align: left;
+}
+.about-card2 h2 
+{
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #aa1313;
+}
+.about-card2 p 
+{
+    font-size: 14px;
+    color: #333;
+}
+
+.about-instructor 
+{
+    padding: 80px 80px;
+    text-align: center;
+}
+.section-instructor 
+{
+    color: #aa1313;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.instructors 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.instructor-card 
+{
+    width: 180px;
+    text-align: center;
+}
+.instructor-card img 
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 3px solid #aa1313;
+}
+.instructor-card h3 
+{
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #111;
+}
+.instructor-card p 
+{
+    font-size: 14px;
+    color: #555;
+}
+.instructor-card 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tooltip 
+{
+    display: none;
+    position: absolute;
+    top: 60%;
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    width: 200px;
+}
+
+/* =======================
+   CLASSES
+======================= */
+#classes 
+{
+    padding: 60px;
+    text-align: center;
+}
+#classes h1 
+{
+    color: #aa1313;
+    font-size: 36px;
+}
+#classes .subtitle 
+{
+    margin: 10px 0 22px;
+    color: #555;
+}
+#classes .choose-plan 
+{
+    display: inline-block;
+    margin: 0 auto 15px;
+    padding: 10px 28px;
+    background-color: #aa1313;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#classes .choose-plan:hover 
+{
+    background-color: #880f0f;
+}
+
+.cards-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin: 40px;
+    align-items: flex-start;
+}
+.class-card 
+{
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 #aa1313;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s;
+}
+.class-card:hover 
+{
+    transform: translateY(-8px);
+}
+.class-card img 
+{
+    width: 100%;
+    height: 180px;
+}
+.class-card h3 
+{
+    margin: 6px;
+    color: #aa1313;
+}
+.class-card p 
+{
+    margin: 0 15px 15px;
+    font-size: 14px;
+}
+
+.details 
+{
+    display: none;
+    margin: 0 10px 15px;
+    font-size: 14px;
+    color: #777;
+}
+#class-details-section 
+{
+    margin-top: 60px;
+    padding: 30px;
+    border-top: 2px solid #aa1313;
+    text-align: center;
+}
+#details-title 
+{
+    color: #aa1313;
+    margin-bottom: 20px;
+}
+#details-content 
+{
+    font-size: 15px;
+    color: #444;
+    line-height: 1.8;
+}
+.details-hint 
+{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 15px 10px;
+    font-size: 13px;
+    color: #aa1313;
+}
+.class-card .details 
+{
+    display: none;
+}
+.class-card.active .details 
+{
+    display: block;
+}
+
+/* =======================
+   PRICING
+======================= */
+main h1
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #aa1313;
+}
+main p
+{
+    color: #555;
+}
+
+.card
+{
+    border: 1px solid #aa1313;
+}
+.card-body h5
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.card-text
+{
+    margin-bottom: 6px;
+}
+.card h6
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.card 
+{
+    transition: 0.2s;
+}
+.card:hover 
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
+}
+
+.container .add-btn 
+{
+    background-color: #aa1313;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: auto;
+    display: block;
+}
+.add-btn:hover 
+{
+    background-color: #8f0f0f;
+}
+.pricing-card.selected 
+{
+    border: 2px solid #aa1313;
+    box-shadow: 0 0 15px rgba(170, 19, 19, 0.5);
+}
+
+
+.specialist-courses .selected-row 
+{
+    background-color: #fbeaea;
+    border-left: 4px solid #aa1313;
+}
+.specialist-courses .add-btn
+{
+    background-color: #aa1313;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 35%;
+    display: block;
+}
+
+
+.specialist-courses
+{
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+.specialist-courses h2
+{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #aa1313;
+}
+.specialist-courses table
+{
+    width: 100%;
+    border: 1px solid black;
+}
+.specialist-courses th,
+.specialist-courses td 
+{
+    border: 1px solid #000;
+    padding: 12px;
+}
+.specialist-courses thead 
+{
+    background-color: #aa1313;
+    color: #fff;
+}
+
+
+/* =======================
+   TIMETABLE
+======================= */
+#timetable 
+{
+    padding: 60px;
+    text-align: center;
+}
+#timetable h1 
+{
+    color: #aa1313;
+    font-size: 36px;
+}
+#timetable .subtitle 
+{
+    margin: 10px 0 40px;
+    color: #555;
+}
+
+.table-wrapper 
+{
+    overflow-x: auto;
+}
+
+.table-wrapper table 
+{
+    width: 100%;
+    min-width: 900px;
+    border: 1px solid black;
+    table-layout: fixed;
+}
+.table-wrapper thead 
+{
+    background-color: #aa1313;
+    color: white;
+}
+.table-wrapper tbody td:first-child 
+{
+    background-color: #aa1313;
+    color: white;
+    font-weight: bold;
+}
+.table-wrapper th, .table-wrapper td 
+{
+    border: 1px solid black;
+    padding: 14px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+}
+.table-wrapper table td:hover 
+{
+    background-color: #aa1313;
+    color: white;
+    transition: 0.2s;
+}
+
+/* =======================
+   Profile
+======================= */
+#classes-membership 
+{
+    text-align: center;
+    padding: 0;
+}
+#classes-membership h1 
+{
+    font-size: 36px;
+    font-weight: bold;
+    color: #aa1313;
+    margin-bottom: 2px;
+    margin-top: 40px;
+}
+#classes-membership .subtitle 
+{
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#classes-membership .account-box 
+{
+    max-width: 1200px;
+    margin: 40px auto 20px;
+    display: flex;
+    gap: 40px;
+    align-items: stretch; 
+    flex-wrap: wrap;
+}
+.user-info, .membership 
+{
+    flex: 1;
+    min-width: 320px;
+    border: 2px solid #aa1313;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.user-info h2, .membership h2 
+{
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-size: 22px;
+    color: #aa1313;
+    text-align: center;
+}
+.user-info p, .membership p 
+{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+
+}
+.membership .btn 
+{
+    display: inline-block;
+    width: 180px;
+    padding: 6px 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid #aa1313;
+    border-radius: 5px;
+    background-color: #aa1313;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 12px;
+
+}
+.membership .btn:last-of-type 
+{
+    margin-right: 0;
+}
+
+.membership .btn.change:hover 
+{
+    background-color: #691111;
+    border: 2px solid #691111;
+    color: white;
+}
+.membership .btn.cancel 
+{
+    background-color: white;
+    border-color: #555;
+    color: #555;
+}
+.membership .btn.cancel:hover 
+{
+    background-color: #555;
+    color: white;
+}
+.logout-btn 
+{
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 0 auto 40px;
+    padding: 6px 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+.logout-btn:hover 
+{
+    background-color: #333;
+}
+
+/* =======================
+   CONTACTS & FOOTER
+======================= */
+.contact-us 
+{
+    background-color: #000;
+    color: #ccc;
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-us img 
+{
+    text-align: center;
+    width: 210px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.contact-us .details1
+{
+    text-align: center;
+    margin-left: 32px;
+}
+.contact-us .details2
+{
+    text-align: left;
+}
+.contact-us .details1 h2, .contact-us .details2 h2  
+{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.contact-us .details1 ul, .contact-us .details2 ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-us .details1 li, .contact-us .details2 li
+{
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bbb;
+}
+.social-icons 
+{
+    width: 100%;               
+    text-align: center;      
+    margin-top: 10px;
+}
+.social-icons a 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+    background-color: #111;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+.social-icons a:hover 
+{
+    background-color: #aa1313;
+}
+
+.footer 
+{
+    background-color: #000;
+    color: #777;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    border-top: 1px solid #222;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 650px) 
+{
+    /* =======================
+        HEADER & NAVBAR
+    ======================= */
+    header 
+    {
+        flex-wrap: wrap;
+        /*justify-content: center;
+        text-align: center;*/
+    }
+    #logo-img 
+    {
+        width: 90px;
+        height: auto;
+        margin: 10px;
+    }
+    header nav 
+    {
+        /*flex-wrap: wrap;*/
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px 0;
+    }
+    nav a 
+    {
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    /* =======================
+        Index Page (HOME)
+    ======================= */
+    .hero 
+    {
+        height: 65vh;
+    }
+    .hero #welcome-img 
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-content 
+    {
+        top: 50%;
+        right: auto;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+    }
+    .hero-content h1 
+    {
+        font-size: 1.6rem;
+    }
+    .hero-content h2 
+    {
+        font-size: 1.2rem;
+    }
+    .hero-content p 
+    {
+        font-size: 1rem;
+    }
+
+    .why-us 
+    {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .program-cards 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* =======================
+        ABOUT US
+    ======================= */
+    .about-hero 
+    {
+        height: 45vh;
+        margin-top: 0;
+    }
+    .hero-text 
+    {
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100%;
+    }
+    .hero-text h1 
+    {
+        font-size: 1.8rem;
+    }
+    .hero-text p 
+    {
+        font-size: 1rem;
+    }
+    .location-text 
+    {
+        font-size: 0.9rem;
+    }
+
+    .about-section 
+    {
+        padding: 40px 20px;
+    }
+    .about-content 
+    {
+        flex-direction: column;
+    }
+    .about-images 
+    {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .about-images img 
+    {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .mission-vision 
+    {
+        padding: 40px 20px;
+    }
+    .about-card2 
+    {
+        width: 100%;
+    }
+
+    .about-instructor 
+    {
+        padding: 50px 20px;
+    }
+    .section-instructor 
+    {
+        font-size: 1.6rem;
+    }
+    .instructor-card 
+    {
+        width: 45%;
+    }
+    .instructor-card img 
+    {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* =======================
+        CLASSES
+    ======================= */
+    #classes 
+    {
+        padding: 40px 20px;
+    }
+    #classes h1 
+    {
+        font-size: 1.8rem;
+    }
+    #classes .subtitle 
+    {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .cards-container 
+    {
+        margin: 0;
+        gap: 30px;
+    }
+    .class-card 
+    {
+        width: 100%;
+        max-width: 320px;
+    }
+    .class-card img 
+    {
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .class-card h3 
+    {
+        font-size: 1.1rem;
+    }
+    .class-card p, .details 
+    {
+        font-size: 0.9rem;
+    }
+
+    #class-details-section 
+    {
+        padding: 20px;
+        margin-top: 40px;
+    }
+    #details-title 
+    {
+        font-size: 1.4rem;
+    }
+    #details-content 
+    {
+        font-size: 0.95rem;
+    }
+    /* =======================
+        PRICING
+    ======================= */
+
+    /* =======================
+        TIMETABLE
+    ======================= */
+    #timetable 
+    {
+        padding: 30px 15px;
+    }
+    #timetable h1 
+    {
+        font-size: 1.6rem;
+    }
+    #timetable .subtitle 
+    {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    .table-wrapper 
+    {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table-wrapper table 
+    {
+        min-width: 850px;
+    }
+    .table-wrapper th, .table-wrapper td 
+    {
+        font-size: 12px;
+        padding: 10px;
+    }
+    /* =======================
+        CONTACTS & FOOTER
+    ======================= */
+    .contact-us 
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .contact-us img 
+    {
+        width: 150px;
+    }
+    .contact-us .details1, .contact-us .details2 
+    {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1024px) 
+{
+    #timetable 
+    {
+        padding: 40px 30px;
+    }
+    #timetable h1 
+    {
+        font-size: 1.9rem;
+    }
+    #timetable .subtitle 
+    {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+    .table-wrapper th, .table-wrapper td 
+    {
+        padding: 12px;
+        font-size: 13px;
+    }
+}

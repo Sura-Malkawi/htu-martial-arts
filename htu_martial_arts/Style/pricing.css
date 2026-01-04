@@ -1,0 +1,196 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body 
+{
+    color: #111;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header 
+{
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav 
+{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin-right: 8px;
+}
+nav a 
+{
+    margin-right: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav a:hover 
+{
+    color: #aa1313;
+}
+#logo-img 
+{
+    width: 120px;
+    height: 80px;
+    margin: 10px 20px 0;
+}
+
+main h1
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #aa1313;
+}
+main p
+{
+    color: #555;
+}
+
+.card
+{
+    border: 1px solid #aa1313;
+}
+.card-title
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.card-text
+{
+    margin-bottom: 6px;
+}
+.card h6
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.card 
+{
+    transition: 0.2s;
+}
+.card:hover 
+{
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
+}
+
+
+.specialist-courses
+{
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+.specialist-courses h2
+{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #aa1313;
+}
+.specialist-courses table
+{
+    width: 100%;
+    border: 1px solid black;
+}
+.specialist-courses th,
+.specialist-courses td 
+{
+    border: 1px solid #000;
+    padding: 12px;
+}
+.specialist-courses thead 
+{
+    background-color: #aa1313;
+    color: #fff;
+}
+
+.contact-us 
+{
+    background-color: #000;
+    color: #ccc;
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-us img 
+{
+    text-align: center;
+    width: 210px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.contact-us .details1
+{
+    text-align: center;
+    margin-left: 32px;
+}
+.contact-us .details1 h2, .contact-us .details2 h2  
+{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.contact-us .details1 ul, .contact-us .details2 ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-us .details1 li, .contact-us .details2 li
+{
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bbb;
+}
+.social-icons 
+{
+    width: 100%;               
+    text-align: center;      
+    margin-top: 10px;
+}
+.social-icons a 
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 0 5px;
+    background-color: #111;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+.social-icons a:hover 
+{
+    background-color: #aa1313;
+}
+
+.footer 
+{
+    background-color: #000;
+    color: #777;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    border-top: 1px solid #222;
+}

@@ -1,0 +1,222 @@
+/* =======================
+   RESET & BODY
+======================= */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image 
+{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.home 
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 3;
+
+    width: 45px;
+    height: 45px;
+    color: white;
+}
+.home:hover 
+{
+    color: #aa1313;
+}
+
+/* =======================
+   Login
+======================= */
+.login-page 
+{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content 
+{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.gym-name 
+{
+    color: whitesmoke;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.login-box h1
+{
+    color: #aa1313;
+    margin-bottom: 15px;
+}
+.login-box 
+{
+    width: 360px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+.login-box label 
+{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+.login-box input 
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.email-input
+{
+    margin-bottom: 20px;
+}
+.password-input
+{
+    margin-bottom: 8px;
+}
+.forgotPassword 
+{
+    margin-top: 0;
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #aa1313;
+    text-decoration: none;
+}
+.login-box button 
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #aa1313;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.signup-text 
+{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+.signup-text a 
+{
+    color: #aa1313;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* =======================
+   Signup
+======================= */
+.signup-page 
+{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-content 
+{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.signup-box 
+{
+    width: 380px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+.signup-box .welcome 
+{
+    color: #aa1313;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.signup-box label 
+{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+.signup-box input 
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.signup-box button 
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #aa1313;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.login 
+{
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+.login a 
+{
+    color: #aa1313;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* =======================
+   Copyright
+======================= */
+.copyright 
+{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+    z-index: 2;
+}
